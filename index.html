@@ -6,7 +6,7 @@
     <title>Florentin's Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Background gradient */
+        /* Base styles */
         body {
             font-family: 'Lato', sans-serif;
             background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
@@ -30,15 +30,29 @@
             justify-content: center;
             margin-top: 20px;
         }
+
         .gallery img {
             width: 200px;
             height: auto;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
         }
+
         .gallery img:hover {
             transform: scale(1.05);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .gallery img {
+                width: 100%; /* Images take up full width on small screens */
+                max-width: 150px; /* Optional max-width to control size on mobile */
+            }
         }
     </style>
 </head>
