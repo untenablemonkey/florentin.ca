@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Photos - Florentin von Frankenberg</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Additional Styles */
         body {
             font-family: 'Lato', sans-serif;
-            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            background-color: #f7f7f7;
             color: #333;
             margin: 0;
             padding: 20px;
             text-align: center;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
         }
 
         h1 {
@@ -26,21 +23,9 @@
             margin-bottom: 20px;
         }
 
-        /* Gallery styles */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
         .gallery img {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
             border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .gallery img:hover {
@@ -58,33 +43,37 @@
 <body>
 
     <!-- Content Section -->
-    <div class="content">
-        <h1>My Photos</h1>
+    <div class="container">
+        <h1 class="text-center my-4">My Photos</h1>
 
-        <div class="gallery">
-            <a href="photos/20170805_142231.jpg" target="_blank"><img src="photos/20170805_142231.jpg" alt="Photo 1"></a>
-            <a href="photos/20170805_162257.jpg" target="_blank"><img src="photos/20170805_162257.jpg" alt="Photo 2"></a>
-            <a href="photos/20170807_113016.jpg" target="_blank"><img src="photos/20170807_113016.jpg" alt="Photo 3"></a>
-            <a href="photos/20170807_122543.jpg" target="_blank"><img src="photos/20170807_122543.jpg" alt="Photo 4"></a>
-            <a href="photos/20170807_123311.jpg" target="_blank"><img src="photos/20170807_123311.jpg" alt="Photo 5"></a>
-            <a href="photos/20170808_080502.jpg" target="_blank"><img src="photos/20170808_080502.jpg" alt="Photo 6"></a>
-            <a href="photos/20170808_095354.jpg" target="_blank"><img src="photos/20170808_095354.jpg" alt="Photo 7"></a>
-            <a href="photos/20170808_100550.jpg" target="_blank"><img src="photos/20170808_100550.jpg" alt="Photo 8"></a>
-            <a href="photos/20170808_173308.jpg" target="_blank"><img src="photos/20170808_173308.jpg" alt="Photo 9"></a>
-            <a href="photos/20170808_173539.jpg" target="_blank"><img src="photos/20170808_173539.jpg" alt="Photo 10"></a>
-            <a href="photos/20170808_173657.jpg" target="_blank"><img src="photos/20170808_173657.jpg" alt="Photo 11"></a>
-            <a href="photos/20170809_211803.jpg" target="_blank"><img src="photos/20170809_211803.jpg" alt="Photo 12"></a>
-            <a href="photos/20170810_143906.jpg" target="_blank"><img src="photos/20170810_143906.jpg" alt="Photo 13"></a>
-            <a href="photos/20170810_214739.jpg" target="_blank"><img src="photos/20170810_214739.jpg" alt="Photo 14"></a>
-            <a href="photos/20170810_214948.jpg" target="_blank"><img src="photos/20170810_214948.jpg" alt="Photo 15"></a>
-            <a href="photos/20170810_235223.jpg" target="_blank"><img src="photos/20170810_235223.jpg" alt="Photo 16"></a>
-            <a href="photos/20181113_175041-PANO.jpg" target="_blank"><img src="photos/20181113_175041-PANO.jpg" alt="Photo 17"></a>
-            <a href="photos/20181115_181959-PANO.jpg" target="_blank"><img src="photos/20181115_181959-PANO.jpg" alt="Photo 18"></a>
-            <a href="photos/20200812_070720-PANO.jpg" target="_blank"><img src="photos/20200812_070720-PANO.jpg" alt="Photo 19"></a>
+        <!-- Bootstrap Grid Gallery -->
+        <div class="row gallery">
+            <div class="col-md-4 mb-4">
+                <a href="photos/20170805_142231.jpg" target="_blank"><img src="photos/20170805_142231.jpg" class="img-fluid" alt="Photo 1"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="photos/20170805_162257.jpg" target="_blank"><img src="photos/20170805_162257.jpg" class="img-fluid" alt="Photo 2"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="photos/20170807_113016.jpg" target="_blank"><img src="photos/20170807_113016.jpg" class="img-fluid" alt="Photo 3"></a>
+            </div>
+            <!-- Add more images in similar blocks -->
+            <div class="col-md-4 mb-4">
+                <a href="photos/20181113_175041-PANO.jpg" target="_blank"><img src="photos/20181113_175041-PANO.jpg" class="img-fluid" alt="Photo 17"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="photos/20181115_181959-PANO.jpg" target="_blank"><img src="photos/20181115_181959-PANO.jpg" class="img-fluid" alt="Photo 18"></a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="photos/20200812_070720-PANO.jpg" target="_blank"><img src="photos/20200812_070720-PANO.jpg" class="img-fluid" alt="Photo 19"></a>
+            </div>
         </div>
 
         <p><a href="index.html" class="back-link">← Back to Home</a></p>
     </div>
 
+    <!-- Add Bootstrap JS (optional for other interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
