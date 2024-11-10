@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electric Outboard Motor Project</title>
-   
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GH5WZ3FJB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-0GH5WZ3FJB');
     </script>
     
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { font-family: 'Lato', sans-serif; margin: 0; padding: 20px; background-color: #f7f7f7; }
         .container { max-width: 800px; margin: 0 auto; }
         h1 { font-size: 2em; margin-bottom: 20px; }
         h2 { font-size: 1.5em; margin-top: 20px; }
         p { font-size: 1.1em; color: #333; line-height: 1.6; }
+        img, video { width: 100%; max-width: 600px; border-radius: 8px; margin-top: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
         iframe { width: 100%; max-width: 600px; height: 315px; margin-top: 20px; border-radius: 8px; }
     </style>
 </head>
@@ -34,11 +36,10 @@
 
     <p>I used the B-series propeller generator to create CAD files for a custom propeller, optimized for the speed and RPM I was targeting. I 3D-printed the propeller (strengthened with a cyanoacrylate coating) and connected it to a large brushless outrunner motor I had on hand. I was thrilled when I later saw <em>RCTestFlight</em> follow a nearly identical design path in his YouTube series!</p>
 
+    <!-- Electric Outboard Thumbnail -->
+    <img src="../photos/electric-outboard-thumbnail.jpg" alt="Electric Outboard Thumbnail">
+    
     <p>To protect the motor, I kept the stock stainless bearings but coated the stator with marine-grade epoxy. I mounted the motor using an existing Minnkota system and designed a hydrodynamic fairing to surround the outrunner. After testing it on my 16-foot sailboat, I was pleased with its efficiency in the speed range I needed.</p>
-
-    <p>Since then, I’ve used this outboard on numerous trips around Hamilton Harbour and even took it on a multi-day camping trip along French River. It’s been remarkably reliable, though I’m still refining the prop pitch, RPM, and durability of the propeller. Future upgrades include integrating larger batteries to extend range.</p>
-
-    <p>With a wireless remote for throttle control, I can move around the boat freely and manage the motor without needing a twist throttle. The VESC app on my phone also provides real-time telemetry, allowing me to monitor power draw and system health.</p>
 
     <h2>Project Overview Video</h2>
     <iframe src="https://www.youtube.com/embed/HPpCAjNR0hc?si=SFxsjac0bDbeOQWK" allowfullscreen></iframe>
@@ -51,4 +52,3 @@
 
 </body>
 </html>
-
