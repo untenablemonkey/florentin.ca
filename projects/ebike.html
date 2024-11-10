@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Folding Bike Conversion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Lato', sans-serif; margin: 0; padding: 20px; background-color: #f7f7f7; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { font-size: 2em; margin-bottom: 20px; }
+        h2 { font-size: 1.5em; margin-top: 20px; }
+        p { font-size: 1.1em; color: #333; line-height: 1.6; }
+        img { width: 100%; max-width: 600px; border-radius: 8px; margin: 10px 0; }
+        .caption { font-size: 0.9em; color: #555; text-align: center; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Electric Folding Bike Conversion</h1>
+
+    <img src="../photos/intro.jpeg" alt="Folding e-bike project introduction">
+    <p>I built a folding e-bike to beat traffic.</p>
+    <p>There isn't a one-size fits all solution to transportation, but I've long believed that a folding e-bike is more flexible than most solutions in terms of versatility. Let's face it, most of our trips by car are short and within the city. On longer trips, a small folding e-bike can be conveniently folded up and rolled onto bus, tram, and train.</p>
+    <p>There are plenty of small folding e-bikes on the market, but unless you spend a pretty penny you can't be sure of what quality you will get and you might not get the features you care about. I wanted a bike with reliable build quality and good components that would perform well as a bicycle. I wanted a bike that was light enough to carry onto a bus or up some stairs, and I wanted to be able to keep up with city traffic, while still maintaining a reasonable range (~50 km). I wanted to be able to service the electric drive components easily and affordably, by myself. So I built my own.</p>
+
+    <img src="../photos/dahon.jpeg" alt="Dahon Vitesse i7 bike">
+    <p>I scoured my local classifieds and found a Dahon Vitesse i7 in immaculate condition for $500. An aluminum frame, a nexus 7-speed gearbox inside the rear hub, and a long reputation for reliability. It was a clear winner.</p>
+
+    <p>Reverse engineering the frame and spokes took time. A set of calipers, a measuring tape, a couple of iterations, and a lot of patience. After plenty of research on how the electric skateboard guys do things, I decided to go with a belt drive using a GT3 5mm belt.</p>
+    
+    <img src="../photos/rear-wheel-cad.png" alt="Rear wheel CAD model">
+    <p>I drew the Dahon's rear wheel spoke pattern in Solidworks and designed a large pulley to fit over the spokes, inspired by Tom Stanton’s YouTube videos.</p>
+
+    <img src="../photos/printed-pulley.jpeg" alt="First 3D printed pulley">
+    <p>This is one of the first pulleys fresh off the printer.</p>
+
+    <img src="../photos/pulley-alignment.jpeg" alt="Pulley alignment on bike">
+    <img src="../photos/rear-hub.jpeg" alt="Rear hub with belt">
+    <img src="../photos/belt-alignment.jpeg" alt="Belt alignment">
+    <p>Finally, I achieved success, but I soon decided I needed a wider belt for more power.</p>
+
+    <h2>Motor and Mounting</h2>
+    <p>The motor mount was one of the easier parts of the project. The final motor choice was a 3500 watt 140 kv motor from Flipsky (6374), common in the electric skateboard community.</p>
+
+    <img src="../photos/motor-mounts.jpeg" alt="Motor mount">
+    <img src="../photos/rear-wheel.jpeg" alt="Rear wheel with mounted motor">
+    <p>The first motor I tried had a higher kv (170), resulting in higher RPM than I wanted. I switched to a wider belt partway through the process to combat belt stretch, which complicated the frame clearance further.</p>
+
+    <h2>Battery and Chainring</h2>
+    <p>The battery sits on the luggage carrier, which needed only minor adjustments to accommodate it. I used a section of extruded aluminum tube and designed quick-release mounts for easy removal.</p>
+
+    <img src="../photos/battery.png" alt="Battery on luggage carrier">
+    <img src="../photos/battery-real.jpeg" alt="Battery mounted">
+    <p>I also designed a larger front chainring for pedaling at higher speeds. After testing with 3D prints, I machined the final chainring out of aluminum.</p>
+
+    <img src="../photos/chainring.png" alt="Chainring design">
+    <img src="../photos/chainring-printed.jpeg" alt="Printed chainring prototype">
+    <img src="../photos/chainring-machined.jpeg" alt="Machined chainring">
+    <p>Ultimately, I went with a 60-tooth chainring I found on eBay.</p>
+
+    <img src="../photos/chainring-ebay.jpeg" alt="60-tooth chainring from eBay">
+
+    <h2>Performance and Results</h2>
+    <p>I used a VESC motor controller with Bluetooth to my phone, letting me monitor power, speed, and range. After a year of use, the bike has proven reliable. The electric drive is simple, accessible, and easily replaceable, with a range of about 50 km at 32 km/h.</p>
+
+    <img src="../photos/parts-cost.png" alt="Parts cost breakdown">
+    <p>My longest trip was 120 km in 3.5 hours with extra batteries, and for city commutes, I'm faster than by car. The bike's maneuverability and lack of sweat factor make it ideal for urban travel.</p>
+
+    <img src="../photos/final.jpeg" alt="Final e-bike">
+    <p>Did I beat traffic and commercial e-bike options? Who knows, but I honed my skills and now have a reliable e-bike for city travel.</p>
+
+    <p><a href="../projects.html">← Back to Projects</a></p>
+</div>
+
+</body>
+</html>
