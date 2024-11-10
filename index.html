@@ -108,3 +108,54 @@
         .sections {
             display: flex;
             justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .sections a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .sections a:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Florentin von Frankenberg</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="photos.html">Photos</a>
+        </nav>
+    </header>
+
+    <!-- Intro Section with Photo, Description, and LinkedIn Button -->
+    <div class="intro">
+        <img src="photos/profile.jpg" alt="Florentin's photo">
+        <p>Hi, I’m Florentin—a Product Manager and engineer with a passion for exploring how technology can solve real-world challenges and enhance daily life. I’m drawn to robotics, innovative personal transportation, and finding ways to blend the outdoors with tech. This page is where I share my projects, interests, and the ideas I’m excited about.</p>
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/florentin-von-frankenberg/" target="_blank" class="linkedin-button">Connect with me on LinkedIn</a>
+    </div>
+
+    <!-- Links to Other Sections -->
+    <div class="sections">
+        <a href="about.html">Learn More About Me</a>
+        <a href="projects.html">Explore My Projects</a>
+        <a href="photos.html">View My Photos</a>
+    </div>
+
+</body>
+</html>
