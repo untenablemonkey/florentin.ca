@@ -52,17 +52,20 @@
             color: #555;
         }
 
-        .project iframe {
+        .project img, .project iframe {
             width: 100%;
             max-width: 560px;
-            height: 315px;
-            border: none;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
-        .back-link {
+        .project-link {
             text-decoration: none;
             color: #00796b;
             font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -74,18 +77,22 @@
 
         <!-- Electric Outboard Project -->
         <div class="project">
+            <a href="projects/electric-outboard.html">
+                <img src="photos/electric-outboard-thumbnail.jpg" alt="Electric Outboard Project Thumbnail">
+            </a>
             <h2>Electric Outboard for My Sailboat</h2>
             <p>A custom-built electric outboard that enhances my sailboat’s capabilities with clean and efficient power.</p>
-            <!-- Embed YouTube Video -->
-            <iframe src="https://www.youtube.com/embed/HPpCAjNR0hc?si=SFxsjac0bDbeOQWK" allowfullscreen></iframe>
+            <a href="projects/electric-outboard.html" class="project-link">Read more</a>
         </div>
 
         <!-- Electric Folding Bike Project -->
         <div class="project">
-            <h2>Electric Folding Bike</h2>
-            <p>My LinkedIn post detailing the process of building a compact, electric folding bike.</p>
-            <!-- LinkedIn Post Link -->
-            <a href="https://www.linkedin.com/pulse/i-built-folding-e-bike-beat-traffic-florentin-von-frankenberg/?trackingId=4Meb%2Fp9gxneSTYko84lv0A%3D%3D" target="_blank">Read the LinkedIn post</a>
+            <a href="projects/ebike.html">
+                <img src="photos/ebike-thumbnail.jpg" alt="Electric Folding Bike Project Thumbnail">
+            </a>
+            <h2>Electric Folding Bike Conversion</h2>
+            <p>Converting a folding bike into a fully electric ride. Explore the design, challenges, and the results of this project!</p>
+            <a href="projects/ebike.html" class="project-link">Read more</a>
         </div>
 
         <p><a href="index.html" class="back-link">← Back to Home</a></p>
