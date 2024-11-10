@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects - Florentin von Frankenberg</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GH5WZ3FJB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-0GH5WZ3FJB');
     </script>
     
@@ -52,12 +52,12 @@
             color: #555;
         }
 
-        .project img, .project iframe {
+        .project video, .project img {
             width: 100%;
             max-width: 560px;
-            height: auto;
             border-radius: 8px;
             margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .project-link {
@@ -71,14 +71,13 @@
 </head>
 <body>
 
-    <!-- Content Section -->
     <div class="content">
         <h1>My Projects</h1>
 
-        <!-- Electric Outboard Project -->
+        <!-- Electric Outboard Project with Video Thumbnail -->
         <div class="project">
             <a href="projects/electric-outboard.html">
-                <img src="photos/electric-outboard-thumbnail.jpg" alt="Electric Outboard Project Thumbnail">
+                <video src="photos/sailboat-tacking.mp4" autoplay loop muted playsinline></video>
             </a>
             <h2>Electric Outboard for My Sailboat</h2>
             <p>A custom-built electric outboard that enhances my sailboat’s capabilities with clean and efficient power.</p>
@@ -88,7 +87,7 @@
         <!-- Electric Folding Bike Project -->
         <div class="project">
             <a href="projects/ebike.html">
-                <img src="photos/ebike-thumbnail.png" alt="Electric Folding Bike Project Thumbnail">
+                <img src="photos/ebike-thumbnail.jpg" alt="Electric Folding Bike Project Thumbnail">
             </a>
             <h2>Electric Folding Bike Conversion</h2>
             <p>Converting a folding bike into a fully electric ride. Explore the design, challenges, and the results of this project!</p>
