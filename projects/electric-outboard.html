@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Outboard Motor Project - Florentin von Frankenberg</title>
+    <title>Electric Outboard Motor Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GH5WZ3FJB"></script>
     <script>
@@ -15,8 +15,9 @@
       gtag('js', new Date());
       gtag('config', 'G-0GH5WZ3FJB');
     </script>
-    
+
     <style>
+        /* Base Styles */
         body {
             font-family: 'Lato', sans-serif;
             background-color: #f7f7f7;
@@ -25,7 +26,7 @@
             padding: 20px;
         }
 
-        /* Header Styles */
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -56,7 +57,7 @@
             color: #0077b5;
         }
 
-        /* Main Content Container */
+        /* Content Container */
         .content {
             max-width: 800px;
             margin: 20px auto;
@@ -64,32 +65,40 @@
             background: white;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: center;
         }
 
         h1, h2 {
             color: #333;
             margin-bottom: 20px;
-            text-align: center;
         }
 
         p {
-            font-size: 1em;
+            font-size: 1.1em;
             color: #555;
-            margin-bottom: 15px;
-            text-align: justify;
+            line-height: 1.6;
+            text-align: left;
         }
 
-        .project-image, iframe {
+        /* Responsive Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
             max-width: 100%;
+            background: #000;
             border-radius: 8px;
+            margin: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
         }
-
-        .back-link {
-            text-decoration: none;
-            color: #00796b;
-            font-weight: bold;
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -99,14 +108,13 @@
     <header>
         <h1>Florentin von Frankenberg</h1>
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/projects.html">Projects</a>
-            <a href="/photos.html">Photos</a>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../photos.html">Photos</a>
         </nav>
     </header>
 
-    <!-- Main Content Section -->
     <div class="content">
         <h1>Electric Outboard Motor Project</h1>
 
@@ -115,17 +123,20 @@
         <p>I used the B-series propeller generator to create CAD files for a custom propeller, optimized for the speed and RPM I was targeting. I 3D-printed the propeller (strengthened with a cyanoacrylate coating) and connected it to a large brushless outrunner motor I had on hand. I was thrilled when I later saw <em>RCTestFlight</em> follow a nearly identical design path in his YouTube series!</p>
 
         <!-- Electric Outboard Thumbnail -->
-        <img src="../photos/electric-outboard-thumbnail.jpg" alt="Electric Outboard Thumbnail" class="project-image">
-        
+        <img src="../photos/electric-outboard-thumbnail.jpg" alt="Electric Outboard Thumbnail">
+
         <p>To protect the motor, I kept the stock stainless bearings but coated the stator with marine-grade epoxy. I mounted the motor using an existing Minnkota system and designed a hydrodynamic fairing to surround the outrunner. After testing it on my 16-foot sailboat, I was pleased with its efficiency in the speed range I needed.</p>
 
+        <!-- Responsive Video Container -->
         <h2>Project Overview Video</h2>
-        <iframe src="https://www.youtube.com/embed/HPpCAjNR0hc?si=SFxsjac0bDbeOQWK" allowfullscreen class="project-image"></iframe>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/HPpCAjNR0hc?si=SFxsjac0bDbeOQWK" allowfullscreen></iframe>
+        </div>
 
         <h2>More Documentation Coming Soon</h2>
         <p>In the future, I’ll be adding more detailed documentation and images to illustrate each part of the process. Stay tuned for updates!</p>
 
-        <p><a href="../projects.html" class="back-link">← Back to Projects</a></p>
+        <p><a href="../projects.html">← Back to Projects</a></p>
     </div>
 
 </body>
