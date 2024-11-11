@@ -7,13 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GH5WZ3FJB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-0GH5WZ3FJB');
     </script>
     
@@ -21,78 +20,18 @@
         /* Base Styles */
         body {
             font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 20px;
             background-color: #f7f7f7;
             color: #333;
-            margin: 0;
-            padding: 20px;
         }
 
-        /* Header Styles */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            border-radius: 8px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
-            color: #0077b5;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 0 15px;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: #0077b5;
-        }
-
-        /* Main Content Container */
-        .container {
-            max-width: 800px;
-            margin: 20px auto; /* Adds spacing between the header and main content */
-            padding: 20px;
-            background: white;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        h1 {
-            font-size: 2em;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            font-size: 1.5em;
-            color: #0077b5;
-            margin-bottom: 10px;
-        }
-
-        .section p {
-            font-size: 1.1em;
-        }
-
-        /* Zoom-in effect for the sailboat photo */
-        .section img:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
+        /* Container and Section Styles */
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 2em; text-align: center; margin-bottom: 20px; color: #0077b5; }
+        .section { margin-bottom: 30px; }
+        .section h2 { font-size: 1.5em; color: #0077b5; margin-bottom: 10px; }
+        .section p { font-size: 1.1em; color: #555; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -108,46 +47,36 @@
         </nav>
     </header>
 
-    <!-- Main Content Container -->
     <div class="container">
         <h1>About Me</h1>
 
-        <!-- Photo of You on Your Sailboat -->
-        <div class="section text-center">
-            <img src="photos/sailboat-profile.jpg" alt="Florentin in his sailboat" class="img-fluid rounded mb-4" style="max-width: 80%; height: auto;">
-            <p class="text-muted">Out on the water with my sailboat—a favorite way to unwind and find inspiration.</p>
-        </div>
-        
         <!-- Introduction Section -->
         <div class="section">
             <h2>Introduction</h2>
-            <p>Hi! I’m Florentin von Frankenberg, an engineer and Product Manager with a strong passion for technology, robotics, and innovation. With a background in mechatronics and product management, I’m always looking for ways to create solutions that enhance daily life and make a positive impact.</p>
+            <p>Hi! I’m Florentin von Frankenberg, a Product Manager and engineer with a passion for finding creative ways that technology can solve human problems.</p>
         </div>
 
-        <!-- Professional Background -->
+        <!-- Professional Background Section -->
         <div class="section">
             <h2>Professional Background</h2>
-            <p>I have a rich background in engineering and project management, specializing in AMRs and UAVs. My experience includes working on complex projects that require a mix of technical knowledge, problem-solving skills, and team collaboration. I enjoy tackling challenging problems and turning ideas into reality through technology.</p>
+            <p>I have a background in mechatronics, specializing in Autonomous Mobile Robots (AMRs) and Unmanned Aerial Vehicles (UAVs). While I have a deep appreciation for the technical details, my passion lies in understanding complex problems and driving the vision that leads to their solutions. As a Product Manager, I’m drawn to the challenge of transforming insights into direction—ensuring that teams stay aligned on value while navigating the intricacies of technical and user needs.</p>
+            <p>A good Product Manager balances vision with pragmatism, and I believe my technical roots help me bridge gaps between engineering and business objectives. This shared language with engineers allows me to connect with various stakeholders, ensuring that everyone from developers to executives can see the ‘why’ behind our decisions and feel part of the mission.</p>
         </div>
 
-        <!-- Personal Passions -->
+        <!-- Personal Passions Section -->
         <div class="section">
             <h2>Personal Passions</h2>
             <p>Outside of work, you’ll often find me exploring the outdoors, riding motorcycles, or working on innovative personal transportation projects.</p>
         </div>
 
-        <!-- Core Values -->
+        <!-- Core Values Section -->
         <div class="section">
             <h2>Core Values</h2>
-            <p>At the heart of everything I do is a commitment to continuous learning, problem-solving, and making a positive impact. I believe that technology has the power to improve lives, and I strive to be part of that journey by embracing curiosity, resilience, and innovation.</p>
+            <p><strong>Curiosity:</strong> I believe that curiosity is one of the most valuable states of mind to cultivate. Every sentence that begins with "I wonder..." opens doors to growth, discovery, and new perspectives. This mindset fuels continuous learning and drives me to approach challenges with an open, inquisitive spirit.</p>
+            <p><strong>Embracing Difference:</strong> Diversity, whether in thought patterns, culture, or problem-solving approach, holds inherent value. I see out-of-the-box thinking and unique perspectives as essential for innovation. Where information patterns vary, there is potential for insight—by weighing the good against the bad, we find ways to make things better. Differences drive progress, and I’m committed to exploring them with curiosity to drive positive change.</p>
         </div>
 
-        <!-- Fun Facts or Unique Details -->
-        <div class="section">
-            <h2>Fun Facts</h2>
-            <p>Did you know? I’m a Swiss-born Canadian who’s equally at home in the mountains or by the lake. I love canoeing, sailing, camping, rock climbing, and general adventuring.</p>
-        </div>
-
+        <!-- Back Link -->
         <p><a href="index.html" class="btn btn-primary">← Back to Home</a></p>
     </div>
 
