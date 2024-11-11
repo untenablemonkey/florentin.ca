@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florentin's Website</title>
+    <title>About Me - Florentin von Frankenberg</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,14 +20,12 @@
         /* Base Styles */
         body {
             font-family: 'Lato', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
             margin: 0;
             padding: 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #f0f5f9, #dbe2ef);
-            color: #333;
         }
-
-        /* Header */
+        /* Header Styles */
         header {
             display: flex;
             justify-content: space-between;
@@ -39,13 +37,11 @@
             background-color: white;
             border-radius: 8px;
         }
-
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 1.8em;
             color: #0077b5;
         }
-
         nav a {
             text-decoration: none;
             color: #333;
@@ -53,55 +49,38 @@
             font-weight: bold;
             transition: color 0.2s;
         }
-
         nav a:hover {
             color: #0077b5;
         }
-
-        /* Intro Section */
-        .intro {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 600px;
-            margin: 20px auto; /* Add a top margin */
-            padding: 40px 0;
+        /* Main Content Container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            background-color: white;
             border-radius: 8px;
         }
-
-        .intro img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+        h1 {
+            font-size: 2em;
+            text-align: center;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .intro p {
-            font-size: 1.15em;
-            margin: 0 20px 20px;
-            line-height: 1.6;
-            color: #555;
+        .section {
+            margin-bottom: 30px;
         }
-
-        /* Button Styling for LinkedIn and Section Links */
-        .sections a, .intro a {
-            text-decoration: none;
-            color: white;
-            background-color: #007bff;
-            padding: 12px 24px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.2s, transform 0.2s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .section h2 {
+            font-size: 1.5em;
+            color: #0077b5;
+            margin-bottom: 10px;
         }
-        .sections a:hover, .intro a:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        .section p {
+            font-size: 1.1em;
+        }
+        /* Zoom-in effect for the sailboat photo */
+        .section img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -111,25 +90,56 @@
     <header>
         <h1>Florentin von Frankenberg</h1>
         <nav>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="photos.html">Photos</a>
         </nav>
     </header>
 
-    <!-- Intro Section with Photo, Description, and LinkedIn Button -->
-    <div class="intro">
-        <img src="photos/profile.jpg" alt="Florentin's photo">
-        <p>Hi, I’m Florentin—a Product Manager and engineer with a passion for exploring how technology can solve real-world challenges and enhance daily life. I’m drawn to robotics, innovative personal transportation, and finding ways to blend the outdoors with tech. This page is where I share my projects, interests, and the ideas I’m excited about.</p>
-        <!-- LinkedIn Button with Unified Styling -->
-        <a href="https://www.linkedin.com/in/florentin-von-frankenberg/" target="_blank">Connect with me on LinkedIn</a>
-    </div>
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1>About Me</h1>
 
-    <!-- Links to Other Sections -->
-    <div class="sections">
-        <a href="about.html">Learn More About Me</a>
-        <a href="projects.html">Explore My Projects</a>
-        <a href="photos.html">View My Photos</a>
+        <!-- Photo of You on Your Sailboat -->
+        <div class="section text-center">
+            <img src="photos/sailboat-profile.jpg" alt="Florentin in his sailboat" class="img-fluid rounded mb-4" style="max-width: 80%; height: auto;">
+            <p class="text-muted">Out on the water with my sailboat—a favorite way to unwind and find inspiration.</p>
+        </div>
+        
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>Hi! I’m Florentin von Frankenberg, a Product Manager and engineer with a passion for finding creative ways that technology can solve human problems.</p>
+        </div>
+
+        <!-- Professional Background -->
+        <div class="section">
+            <h2>Professional Background</h2>
+            <p>I have a background in mechatronics, specializing in Autonomous Mobile Robots (AMRs) and Unmanned Aerial Vehicles (UAVs). While I have a deep appreciation for the technical details, my passion lies in understanding complex problems and driving the vision that leads to their solutions. As a Product Manager, I’m drawn to the challenge of transforming insights into direction—ensuring that teams stay aligned on value while navigating the intricacies of technical and user needs.</p>
+            <p>A good Product Manager balances vision with pragmatism, and I believe my technical roots help me bridge gaps between engineering and business objectives. This shared language with engineers allows me to connect with various stakeholders, ensuring that everyone from developers to executives can see the ‘why’ behind our decisions and feel part of the mission.</p>
+        </div>
+
+        <!-- Personal Passions -->
+        <div class="section">
+            <h2>Personal Passions</h2>
+            <p>Outside of work, you’ll often find me exploring the outdoors, riding motorcycles, or working on innovative personal transportation projects.</p>
+        </div>
+
+        <!-- Core Values -->
+        <div class="section">
+            <h2>Core Values</h2>
+            <p><strong>Curiosity:</strong> I believe that curiosity is one of the most valuable states of mind to cultivate. Every sentence that begins with "I wonder..." opens doors to growth, discovery, and new perspectives. This mindset fuels continuous learning and drives me to approach challenges with an open, inquisitive spirit.</p>
+            <p><strong>Embracing Difference:</strong> Diversity, whether in thought patterns, culture, or problem-solving approach, holds inherent value. I see out-of-the-box thinking and unique perspectives as essential for innovation. Where information patterns vary, there is potential for insight—by weighing the good against the bad, we find ways to make things better. Differences drive progress, and I’m committed to exploring them with curiosity to drive positive change.</p>
+        </div>
+
+        <!-- Fun Facts or Unique Details -->
+        <div class="section">
+            <h2>Fun Facts</h2>
+            <p>Did you know? I’m a Swiss-born Canadian who’s equally at home in the mountains or by the lake. I love canoeing, sailing, camping, rock climbing, and general adventuring.</p>
+        </div>
+
+        <p><a href="index.html" class="btn btn-primary">← Back to Home</a></p>
     </div>
 
 </body>
