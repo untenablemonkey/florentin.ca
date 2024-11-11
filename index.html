@@ -87,31 +87,8 @@
             color: #555;
         }
 
-        .linkedin-button {
-            margin-top: 15px;
-            text-decoration: none;
-            color: white;
-            background-color: #0077b5;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-
-        .linkedin-button:hover {
-            background-color: #005f8a;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Sections Links */
-        .sections {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .sections a {
+        /* Button Styling for LinkedIn and Section Links */
+        .sections a, .intro a {
             text-decoration: none;
             color: white;
             background-color: #007bff;
@@ -121,7 +98,7 @@
             transition: background-color 0.2s, transform 0.2s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .sections a:hover {
+        .sections a:hover, .intro a:hover {
             background-color: #0056b3;
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -144,8 +121,8 @@
     <div class="intro">
         <img src="photos/profile.jpg" alt="Florentin's photo">
         <p>Hi, I’m Florentin—a Product Manager and engineer with a passion for exploring how technology can solve real-world challenges and enhance daily life. I’m drawn to robotics, innovative personal transportation, and finding ways to blend the outdoors with tech. This page is where I share my projects, interests, and the ideas I’m excited about.</p>
-        <!-- LinkedIn Button -->
-        <a href="https://www.linkedin.com/in/florentin-von-frankenberg/" target="_blank" class="linkedin-button">Connect with me on LinkedIn</a>
+        <!-- LinkedIn Button with Unified Styling -->
+        <a href="https://www.linkedin.com/in/florentin-von-frankenberg/" target="_blank">Connect with me on LinkedIn</a>
     </div>
 
     <!-- Links to Other Sections -->
@@ -156,3 +133,4 @@
     </div>
 
 </body>
+</html>
