@@ -103,6 +103,43 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
+
+        /* Sections Links */
+        .sections {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+            margin-top: 30px;
+        }
+        .sections a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .sections a:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Mobile-friendly adjustments */
+        @media (max-width: 600px) {
+            .sections {
+                flex-direction: column; /* Stack buttons vertically on narrow screens */
+                gap: 10px;
+            }
+            .sections a {
+                width: 100%; /* Full-width buttons on mobile */
+                padding: 10px; /* Slightly smaller padding for better fit */
+            }
+        }
+        
     </style>
 </head>
 <body>
